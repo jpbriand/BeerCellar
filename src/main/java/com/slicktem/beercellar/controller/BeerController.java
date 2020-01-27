@@ -38,13 +38,13 @@ public class BeerController {
         return null;
     }
 
-    @DeleteMapping("/beers/{id}/comments")
-    public ResponseEntity<Beer> delete(@PathVariable Long id, @RequestBody String beerComment) {
+    @DeleteMapping("/beers/{id}")
+    public ResponseEntity<Beer> delete(@PathVariable Long id) {
         return null;
     }
 
     @DeleteMapping("/beers/{beerId}/comments/{commentId}")
-    public ResponseEntity<Beer> delete(@PathVariable Long beerId, @RequestBody Long commentId) {
+    public ResponseEntity<Beer> delete(@PathVariable Long beerId, @PathVariable Long commentId) {
         return null;
     }
 }
